@@ -10,6 +10,8 @@ import lombok.Data;
 @Data
 public class User {
 
+    private int id;
+
     @NotNull(message = "用户名不能为空")
     @Length(min = 3, max = 10, message = "用户名长度需要在3-10之间")
     @Pattern(regexp = "(\\w)+", message = "用户名包含不合法字符")
